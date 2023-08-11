@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster+Two&family=Montserrat+Alternates&family=Roboto&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+body{
+  scroll-behavior: smooth;
+}
+/*hero-section*/
+.hero-section {
+  background-image: url("../media/petale.jpg");
+  height: 80vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0;
+  padding:50px;
+  z-index: -50;
+}
+nav{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 1.5rem;
+    font-weight:bold;
+    display:flex;
+    justify-content: end;
+    color:#3a3a3a;
+}
+nav ul{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:550px;
+}
+nav ul li{
+    list-style: none;
+}
+a{
+  text-decoration: none;
+  color:#3a3a3a
+}
+nav ul li a{
+    text-decoration: none;
+    position:relative;
+    z-index:0;
+}
+nav ul li a::before{
+    content:"";
+    background-color: #eac6da;
+    position:absolute;
+    left:0;
+    bottom:3px;
+    width:100%;
+    height:8px;
+    z-index:-1;
+    transition:all .3s ease-in-out;
+}
+nav ul li a:hover::before{
+    bottom:0;
+    height:100%;
+    border-radius:10px;
+    padding:5px;
+    margin-left:-px;
+}
+.social-media{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    position:absolute; 
+    left:40px;
+    top:100px;
+    font-size:1.9rem;
+}
+.social-media i{
+    animation-duration:4s;
+}
+.text-hero{
+    position: absolute;
+    top:50%;
+    right:16.5rem;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+.mern{
+z-index: 999;
+color:#3a3a3a;
+}
+.mern-line{
+  content:"";
+  width:22%;
+  height:10px;
+  background-color:#eac6da;
+  position:absolute;
+  z-index:-1;
+  left:37%;
+  bottom:14%;
+}
+.web-title{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size:2.5rem;
+    color:#3a3a3a;
+    position:absolute;
+    top:40%;
+    right:17%;
+}
+.text-hero p{
+    font-family: 'Montserrat Alternates', sans-serif;
+    position:relative;
+    z-index:0;
+    font-size:2.2rem;
+}
+.btn-hero-section {
+  width:30%;
+  padding: 0.8em 1.8em;
+  border: 2px solid rgb(43, 42, 42);
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color: rgb(43, 42, 42);
+ }
+ .btn-hero-section::before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background:#eac6da;;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+ }
+ .btn-hero-section:hover::before {
+  width: 105%;
+ }
+ .btn-hero-section:hover {
+  color: rgb(43, 42, 42);;
+ }
+.text-hero h1:hover{
+    color:#290017;
+}
+.text-hero p:hover{
+    color:#83084e;
+}
+.text-blur-out {
+	-webkit-animation: text-blur-out 4s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite both;
+	        animation: text-blur-out 4s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite both;
+}
+
+@-webkit-keyframes text-blur-out {
+    0% {
+      -webkit-filter: blur(0.01);
+              filter: blur(0.01);
+    }
+    100% {
+      -webkit-filter: blur(12px) opacity(0%);
+              filter: blur(12px) opacity(0%);
+    }
+  }
+  @keyframes text-blur-out {
+    0% {
+      -webkit-filter: blur(0.01);
+              filter: blur(0.01);
+    }
+    100% {
+      -webkit-filter: blur(12px) opacity(0%);
+              filter: blur(12px) opacity(0%);
+    }
+  }
+  /*about*/
+  .about-section{
+    background-image: url("../media/31315-removebg-preview.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+    width:80%;
+    line-height:40px; 
+    padding: 50px 0; 
+    height:90vh;
+  }
+  .about-section p{
+    font-family: 'Montserrat Alternates', sans-serif;
+    color:#290017; 
+  }
+  .big-text{
+    font-size:1.5rem;
+    font-weight:bold;
+    color:#290017
+  }
+  .text-about{
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+  }
+  .btn-go-to-the-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 18px 17px;
+    background-color:#290017;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+/*SKILLS*/
+.skills-section{
+  background-image: url("../media/petale.jpg");
+  background-size: cover;
+}
+.skills-bg{
+  padding:50px;
+  width:75%;
+  margin:0 auto;
+  display:flex;
+  flex-direction: column;
+  gap:10px;
+}
+.skills-section h2{
+  font-size: 2.5rem;
+  color:#3a3a3a
+}
+.skills-bars{
+  height:20px;
+  background-color:#eac6da;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding:8px;
+  font-weight: bold;
+  color:#290017
+}
+.skills{
+  display: flex;
+  align-items: center;
+  gap:15px;
+}
+.skills-name90{
+  width:500px;
+}
+.skills-name85{
+  width:450px;
+}
+.skills-name75{
+  width:420px;
+}
+.skills span{
+  font-weight:bold;
+}
+.text-skills{
+  position:absolute;
+  right:10%;
+  font-size: 2.5rem;
+}
+/*FOOTER*/
+footer{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:0 auto;
+  width:75%;
+  padding:50px;
+}
+footer ul{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  width:300px;
+}
+footer ul li{
+  list-style: none;
+  font-weight: bold;
+  transition:transform 1s;
+}
+footer ul li:hover{
+  transform:scale(1.4);
+}
+.social-media-footer{
+  display:flex;
+  gap:30px;
+}
+.social-media-footer i{
+  animation-duration:4s;
+}

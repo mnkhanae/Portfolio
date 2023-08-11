@@ -1,0 +1,145 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/fc7fc33899.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="icon" type="image/x-icon" href="media/favicon.png">
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <section class="hero-section">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#section-about">About</a></li>
+          <li><a href="#section-skills">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <img src="media/logo.png" alt="logo" />
+      <div class="social-media">
+        <i class="fa-brands fa-instagram fa-shake"></i>
+        <i class="fa-brands fa-linkedin-in fa-shake"></i>
+        <i class="fa-brands fa-github fa-shake"></i>
+        <i class="fa-brands fa-twitter fa-bounce"></i>
+      </div>
+      <h1 class="web-title text-blur-out">Web Developer Front-end</h1>
+      <div class="text-hero">
+        <p>
+          Full Stack <span class="mern-line"></span
+          ><span class="mern">Mern </span>very soon...
+        </p>
+        <button class="btn-hero-section">
+          <a href="contact.html">Contact</a>
+        </button>
+      </div>
+    </section>
+    <section id="section-about" class="about-section">
+      <div class="text-about">
+        <p>I'm <span class="big-text">Hanae Manekoudi,</span></p>
+        <p>
+          After teaching french for ten years and managing my own embroidery
+          business, I turned towards
+          <span class="big-text">web development,</span> a field that has
+          interested me for a very long time.
+        </p>
+        <p>
+          "I am a tech enthusiast with a
+          <span class="big-text">strong passion</span> for IT and technology.
+          Web development is my true calling, where I find endless fascination.
+          My portfolio reflects my dedication to mastering this field,
+          showcasing <span class="big-text">my commitment</span> to innovation
+          and problem-solving in the world of web development."
+        </p>
+      </div>
+      <div class="div-photo">
+        <img class="photo-moi" src="media/photo.png" alt="photo" />
+      </div>
+    </section>
+    <button id="scrollButton" class="btn-go-to-the-top" onclick="scrollToTop()">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <section class="skills-section" id="section-skills">
+      <div class="skills-bg">
+      <h2>Development & Design skills</h2>
+      <div class="skills">
+        <div class="skills-name90 skills-bars">Html</div>
+        <span>90%</span>
+      </div>
+
+      <div class="skills">
+        <div class="skills-name85 skills-bars">CSS</div>
+        <span>85%</span>
+      </div>
+
+      <div class="skills">
+        <div class="skills-name85 skills-bars">Bootstrap</div>
+        <span>85%</span>
+      </div>
+
+      <div class="skills">
+        <div class="skills-name75 skills-bars">Javascript</div>
+        <span>75%</span>
+      </div>
+
+      <div class="skills">
+        <div class="skills-name75 skills-bars">React</div>
+        <span>75%</span>
+      </div>
+
+      <div class="skills">
+        <div class="skills-name75 skills-bars">Firebase</div>
+        <span>75%</span>
+      </div>
+
+      <div class="skills">
+        <div class="skills-name75 skills-bars">Figma</div>
+        <span>75%</span>
+      </div>
+
+      <div class="skills">
+        <div class="skills-name75 skills-bars">Inkscape</div>
+        <span>75%</span>
+      </div>
+    </div>
+    </section>
+    <footer>
+      <div class="social-media-footer">
+        <i class="fa-brands fa-instagram fa-shake"></i>
+        <i class="fa-brands fa-linkedin-in fa-shake"></i>
+        <i class="fa-brands fa-github fa-shake"></i>
+        <i class="fa-brands fa-twitter fa-bounce"></i>
+      </div>
+      <div class="links-footer">
+        <ul>
+          <li><a href="#section-about">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script>
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+      window.onscroll = function () {
+        var button = document.getElementById("scrollButton");
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          button.style.display = "block";
+        } else {
+          button.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>

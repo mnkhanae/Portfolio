@@ -1,0 +1,151 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/projects.css">
+    <script
+    src="https://kit.fontawesome.com/fc7fc33899.js"
+    crossorigin="anonymous"
+  ></script>
+    <title>Projects</title>
+</head>
+<body>
+    <section class="projects-intro">
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+              <li><a href="#projects-container">Projects</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <img src="media/logo.png" alt="logo" />
+      <div class="social-media">
+        <i class="fa-brands fa-instagram fa-shake"></i>
+        <i class="fa-brands fa-linkedin-in fa-shake"></i>
+        <i class="fa-brands fa-github fa-shake"></i>
+        <i class="fa-brands fa-twitter fa-bounce"></i>
+      </div>
+      <div class="text-projects">
+      <h1 class="title-projects">Explore my projects</h1>
+      <button class="btn-projects"><a href="#projects-container">Projects</a></button>
+      </div> 
+    </section>
+    <section class="projects-container"id="projects-container">
+        <button id="scrollButton" class="btn-go-to-the-top"onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+        <div class="projects-grid">
+       <div class="card">
+        <img src="media/photofolio.png" alt="photofolio"/>
+        <h3>Photofolio</h3>
+        <div class="language">
+            <span>Html</span>
+            <span>CSS</span>
+            <span>Javascript</span>
+            <span>Bootstrap</span>
+        </div>
+        <div class="buttons-projects-div">
+            <button class="button-projects"><a href="https://mnkhanae.github.io/Photofolio/" target="_blank">View</a></button>
+            <button class="button-projects"><a href="https://github.com/mnkhanae/Photofolio.git" target="_blank">Github</a></button>
+        </div>
+        </div>
+        <div class="card">
+            <img src="media/githubfinder.png" alt="githubfinder"/>
+            <h3>Github Finder</h3>
+            <div class="language">
+                <span>Html</span>
+                <span>CSS</span>
+                <span>Javascript</span>
+            </div>
+            <div class="buttons-projects-div">
+                <button class="button-projects"><a href="https://mnkhanae.github.io/Github-Finder/" target="_blank">View</a></button>
+                <button class="button-projects"><a href="https://github.com/mnkhanae/Github-Finder.git" target="_blank">Github</a></button>
+            </div>
+            </div>
+            <div class="card">
+                <img src="media/jeu.png" alt="jeu"/>
+                <h3>Jeu</h3>
+                <div class="language">
+                    <span>Html</span>
+                    <span>CSS</span>
+                    <span>Javascript</span>
+                    <span>Bootstrap</span>
+                </div>
+                <div class="buttons-projects-div">
+                    <button class="button-projects"><a href="https://mnkhanae.github.io/Jeu-devinette/" target="_blank">View</a></button>
+                    <button class="button-projects"><a href="https://github.com/mnkhanae/Jeu-devinette.git" target="_blank">Github</a></button>
+                </div>
+                </div>
+                <div class="card">
+                    <img src="media/surfisidemedia.png" alt="surfisidemedia"/>
+                    <h3>Surfside Media</h3>
+                    <div class="language">
+                        <span>Html</span>
+                        <span>CSS</span>
+                        <span>Javascript</span>
+                        <span>Bootstrap</span>
+                    </div>
+                    <div class="buttons-projects-div">
+                        <button class="button-projects"><a href="https://mnkhanae.github.io/Surfside-Media/" target="_blank">View</a></button>
+                        <button class="button-projects"><a href="https://github.com/mnkhanae/Surfside-Media.git" target="_blank">Github</a></button>
+                    </div>
+                    </div>
+                    <div class="card">
+                        <img src="media/designhive.png" alt="designhive"/>
+                        <h3>Design Hive</h3>
+                        <div class="language">
+                            <span>Html</span>
+                            <span>CSS</span>
+                            <span>Javascript</span>
+                        </div>
+                        <div class="buttons-projects-div">
+                            <button class="button-projects"><a href="" target="_blank">View</a></button>
+                            <button class="button-projects"><a href="https://github.com/abde109/Design-Hive.git" target="_blank">Github</a></button>
+                        </div>
+                        </div>
+                        <div class="card">
+                            <img src="media/ayabroderie.png" alt="ayabroderie"/>
+                            <h3>Aya Broderie</h3>
+                            <div class="language">
+                                <span>Html</span>
+                                <span>CSS</span>
+                                <span>React</span>
+                                <span>Firebase</span>
+                            </div>
+                            <div class="buttons-projects-div">
+                                <button class="button-projects"><a href="" target="_blank">View</a></button>
+                                <button class="button-projects"><a href="https://github.com/mnkhanae/ayabroderie.git" target="_blank">Github</a></button>
+                            </div>
+                            </div>
+    </div>
+    </section>
+    <footer>
+        <div class="social-media-footer">
+          <i class="fa-brands fa-instagram fa-shake"></i>
+          <i class="fa-brands fa-linkedin-in fa-shake"></i>
+          <i class="fa-brands fa-github fa-shake"></i>
+          <i class="fa-brands fa-twitter fa-bounce"></i>
+        </div>
+        <div class="links-footer">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>     
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </footer>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        window.onscroll = function() {
+              var button = document.getElementById("scrollButton");
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                  button.style.display = "block";
+              } else {
+                  button.style.display = "none";
+              }
+          };
+          </script>
+</body>
+</html>
