@@ -360,7 +360,7 @@ footer{
       align-items: center;
     }
     .fa-bars{
-      display:block;
+      display:block!important;
       z-index: 50;
     }
   }
