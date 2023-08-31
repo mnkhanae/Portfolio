@@ -8,9 +8,14 @@
   color:black;
   text-decoration: none;
 }
+
 body{
   scroll-behavior: smooth;
-  overflow-x: hidden;
+}
+@supports (-moz-appearance:none) {
+  html{
+      overflow-x: hidden;
+  }
 }
 /*hero-section*/
 .hero-section {
@@ -21,6 +26,7 @@ body{
   background-position: 0;
   padding:50px;
   z-index: -50;
+  overflow-x: hidden;
 }
 .fa-bars{
   position:absolute;
@@ -309,7 +315,7 @@ footer ul li:hover{
 @media screen and (max-width:1232px){
   .web-title-responsive{
     font-size:1.8rem;
-    right:10%;
+    right:5%;
     display:block;
   }
   .web-title{
@@ -399,7 +405,7 @@ footer ul li:hover{
   nav{
     position:absolute;
     top:15%;
-    right:4%;;
+    right:4%;
     background-color: rgba(0, 0, 0, 0.281);
     backdrop-filter:blur(8px);
     width:60%;
@@ -407,12 +413,13 @@ footer ul li:hover{
     display:flex;
     justify-content:center;
     align-items: center;
-    margin-right:-100%;
-    transition:all 0.5s ease;
+    scale:0;
+    transition:all 0.3s ease-out;
     z-index: 50;
+    overflow-x: hidden;
   }
   .mobile-menu{
-    margin-right:0;
+    scale:1;
    }
   nav ul li{
     margin:10px 0;
@@ -431,7 +438,9 @@ footer ul li:hover{
 @media screen and (max-width:400px){
   .web-title-responsive{
     top:60%;
-    font-size:1.2rem;
+    font-size:1.3rem;
+    text-align: center;
+
   }
  .hero-section{
   height:600px;
