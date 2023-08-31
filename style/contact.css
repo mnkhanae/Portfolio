@@ -6,6 +6,7 @@
 }
 body{
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 .social-media a i{
   color:black;
