@@ -7,6 +7,10 @@
 body{
   scroll-behavior: smooth;
 }
+.social-media a i{
+  color:black;
+  text-decoration: none;
+}
 .contact-intro{
     background-image: url("../media/petale.jpg");
     height: 84vh;
@@ -15,6 +19,12 @@ body{
     background-position: 0;
     padding:50px 50px 50px 0;
 }
+.fa-bars{
+  position:absolute;
+  right:10%;
+  font-size:30px;
+  display:none!important;
+ }
 nav{
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 1.5rem;
@@ -190,4 +200,65 @@ footer{
   .social-media-footer i{
     animation-duration:4s;
   }
+  /*RESPONSIVE*/
+@media screen and (max-width:832px){
+  .contact-intro{
+    height:800px;
+  }
+  .formulaire-section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-left: 40px;
+  }
+  .logo{
+    width:250px;
+  }
+  .contact-me{
+    font-size:1.2rem;
+    position:absolute;
+    top:10%;
+  }
+  nav{
+    position:absolute;
+    top:15%;
+    right:4%;;
+    background-color: rgba(0, 0, 0, 0.281);
+    backdrop-filter:blur(8px);
+    width:60%;
+    height:300px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin-right:-100%;
+    transition:all 0.5s ease;
+    z-index: 50;
+  }
+  .mobile-menu{
+    margin-right:0;
+   }
+  nav ul li{
+    margin:10px 0;
+    font-size:1.3rem;
+  }
+  nav ul{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fa-bars{
+    display:block;
+    z-index: 50;
+  }
+  form{
+    width:200px;
+  }
+}
+@media screen and (max-width:690px){
+  footer{
+    flex-direction: column;
+    gap:30px;
+   }
+}
   

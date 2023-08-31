@@ -12,6 +12,7 @@
   </head>
   <body>
     <section class="hero-section">
+      <i class="fa-solid fa-bars"></i>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -21,23 +22,28 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-      <img src="media/logo.png" alt="logo" />
+     
+      <img class="logo"src="media/logo.png" alt="logo" />
       <div class="social-media">
-        <i class="fa-brands fa-instagram fa-shake"></i>
-        <i class="fa-brands fa-linkedin-in fa-shake"></i>
-        <i class="fa-brands fa-github fa-shake"></i>
-        <i class="fa-brands fa-twitter fa-bounce"></i>
+        <a href="https://www.instagram.com/hanaedev/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"><i class="fa-brands fa-instagram fa-shake"></i></a>
+        <a href="https://www.linkedin.com/in/hanae-manekoudi-2230a2218/"target="_blank"><i class="fa-brands fa-linkedin-in fa-shake"></i></a>
+        <a href="https://github.com/mnkhanae" target="_blank"><i class="fa-brands fa-github fa-shake"></i></a>
+        <a href="https://twitter.com/HanaeMnk" target="_blank"><i class="fa-brands fa-twitter fa-bounce"></i></a>
       </div>
-      <h1 class="web-title text-blur-out">Web Developer Front-end</h1>
-      <div class="text-hero">
-        <p>
-          Full Stack <span class="mern-line"></span
-          ><span class="mern">Mern </span>very soon...
-        </p>
-        <button class="btn-hero-section">
-          <a href="contact.html">Contact</a>
-        </button>
+      <div class="text-hero-div">
+        <h1 class="web-title text-blur-out">Web Developer Front-end</h1>
+        <h1 class="web-title-responsive">Web Developer Front-end</h1>
+        <div class="text-hero">
+          <p>
+            Full Stack <span class="mern-line"></span
+            ><span class="mern">Mern </span>very soon...
+          </p>
+          <a href="./media/CV Hanae Manekoudi.pdf" target="_blank">
+            <button class="btn-hero-section">Resume</button>
+        </a>
+        </div>
       </div>
+   
     </section>
     <section id="section-about" class="about-section">
       <div class="text-about">
@@ -111,10 +117,10 @@
     </section>
     <footer>
       <div class="social-media-footer">
-        <i class="fa-brands fa-instagram fa-shake"></i>
-        <i class="fa-brands fa-linkedin-in fa-shake"></i>
-        <i class="fa-brands fa-github fa-shake"></i>
-        <i class="fa-brands fa-twitter fa-bounce"></i>
+        <a href="https://www.instagram.com/hanaedev/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"><i class="fa-brands fa-instagram fa-shake"></i></a>
+        <a href="https://www.linkedin.com/in/hanae-manekoudi-2230a2218/"target="_blank"><i class="fa-brands fa-linkedin-in fa-shake"></i></a>
+        <a href="https://github.com/mnkhanae" target="_blank"><i class="fa-brands fa-github fa-shake"></i></a>
+        <a href="https://twitter.com/HanaeMnk" target="_blank"><i class="fa-brands fa-twitter fa-bounce"></i></a>
       </div>
       <div class="links-footer">
         <ul>
@@ -140,6 +146,14 @@
           button.style.display = "none";
         }
       };
+    
+        const faBars = document.querySelector(".fa-bars")
+        const navLinks = document.querySelector("nav")
+ 
+        faBars.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+
     </script>
   </body>
 </html>
